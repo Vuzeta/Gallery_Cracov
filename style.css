@@ -1,0 +1,55 @@
+body {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding:0;
+    background: url(img/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+ul li a {
+    color: #000;
+    height: 360px;
+    width: 320px;
+    display: block;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding-top: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow:    4px 4px 5px 0px rgba(0, 0, 0, 0.68);
+    box-shadow:         4px 4px 5px 0px rgba(0, 0, 0, 0.68);
+    text-align: center;
+    background: url(img/paper.jpg);
+    margin: 20px;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    transition: all .3s ease-in-out;
+}
+
+ul a:after {
+    content: attr(title);
+}
+
+ul li {
+    transform: rotate(-3deg);
+}
+
+ul li:nth-child(3n) {
+    transform: none;
+}
+
+ul li:nth-child(3n+1) {
+    transform: rotate(3deg);
+}
+
+ul li:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 10;
+}
+
+img {
+    border-radius: 5px;
+}
